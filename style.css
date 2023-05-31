@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@300;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 30%;
+    margin-top: 10px;
+    border: 3px solid white;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+body{
+    font-family: lato;
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.toggle {
+    transform: scale(1.2);
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+}
