@@ -10,7 +10,6 @@ img{
     margin-top: 10px;
     border: 3px solid white;
     margin-left: 10px;
-    transition: 0.3s;
 }
 
 body{
@@ -19,6 +18,7 @@ body{
     color: white;
     padding: 20px;
     text-align: center;
+    transition: 0.3s;
 }
 
 h1{
@@ -29,5 +29,4 @@ h1{
 .toggle {
     transform: scale(1.2);
     border-radius: 20px;
-    box-shadow: 0 0 5px;
 }
