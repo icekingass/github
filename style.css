@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@300;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    text-decoration-color: none;
 }
 
 img{
@@ -13,20 +17,66 @@ img{
 }
 
 body{
-    font-family: lato;
+    font-family: 'Lato';
     background: black;
     color: white;
     padding: 20px;
     text-align: center;
     transition: 0.3s;
+    overflow: hidden;
 }
 
 h1{
     text-align: center;
     text-transform: uppercase;
+    margin: 0 auto;
+    z-index: 1;
 }
-
+/* 
 .toggle {
     transform: scale(1.2);
     border-radius: 20px;
+} */
+
+/* 
+li {
+    margin-top: 20px;
+    display: none;
+    list-style: none;
+    transition: 0.3s;
+}
+.fa-bars:hover > li{
+    display: none ;
+    color: aliceblue;
+    list-style: none;
+} */
+
+div.fa-solid{
+    position: relative;
+    transform: scale(2);
+    right: 0;
+    margin: 1%;
+    margin-left: 92%;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+}
+
+.sub-menu{
+    width: 100px;
+    text-align: center;
+    display: none;
+    font-size: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color:teal;
+    cursor: pointer;
+}
+.fa-bars:hover .sub-menu{
+    transition: 1s;
+    display: list-item;
+    list-style: none;
+    text-align: center;
 }

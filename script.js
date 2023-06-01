@@ -1,13 +1,24 @@
-const images = document.getElementsByTagName("img")
+var FAQ = document.getElementById("FAQ");
+var Pagrindinis = document.getElementById("Pagrindinis");
+var Apie = document.getElementById("Apie");
+var Kontaktai = document.getElementById("Kontaktai");
 
-for(let i = 0; i < images.length; i++){
+FAQ.addEventListener("click", function () {
+  // Redirect or scroll to the section
+  window.location.href = "#";
+});
 
-    images[i].addEventListener("click", function(){
+Pagrindinis.addEventListener("click", function () {
+  // Redirect or scroll to the section
+  window.location.href = "#";
+});
 
-        for(let image of images){
-            image.classList.remove("toggle")
-        }
+Apie.addEventListener("click", function () {
+  // Redirect or scroll to the section
+  window.location.href = "#";
+});
 
-        this.classList.add("toggle")
-    })
-}
+Kontaktai.addEventListener("click", function () {
+  // Redirect or scroll to the section
+  window.location.href = "#";
+});
