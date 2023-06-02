@@ -73,6 +73,7 @@ div.fa-solid{
     text-decoration: none;
     color:teal;
     cursor: pointer;
+    margin-top: 10px;
 }
 .fa-bars:hover .sub-menu{
     transition: 1s;
