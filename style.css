@@ -7,7 +7,6 @@
   list-style: none;
   text-decoration: none;
   text-decoration-color: none;
-  overflow: hidden;
 }
 
 body {
@@ -107,6 +106,9 @@ button.close-button {
 
 
   @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     #MenuBtn {
       font-size: 24px;
     }
@@ -171,6 +173,3 @@ button.close-button {
     word-break: break-all;
   }
 }
-
-
-  
