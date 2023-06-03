@@ -19,6 +19,8 @@ body {
   overflow: hidden;
   background-image: url(images/img2.jpg);
   background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -102,7 +104,41 @@ button.close-button {
     color: inherit;
   }
 
-/* Media Query for mobile devices with width up to 320px */
+
+  @media (max-width: 768px) {
+    #MenuBtn {
+      font-size: 24px;
+    }
+  
+    #sidebar {
+      width: 100vw;
+      left: -100vw;
+    }
+  
+    #sidebar.open {
+      transform: translateX(100vw);
+    }
+  
+    #sidebar ul li a {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  
+    body {
+      background-size: cover;
+    }
+  
+    h1 {
+        font-size: 0.75em;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+  }
+
 @media (max-width: 320px) {
   #MenuBtn {
     font-size: 24px;
@@ -126,7 +162,7 @@ button.close-button {
     margin-top: 20px;
   }
   body{
-    background-size: 500%;
+    background-size: cover;
   }
   h1 {
     font-size: 0.6em;
@@ -134,3 +170,6 @@ button.close-button {
     word-break: break-all;
   }
 }
+
+
+  
