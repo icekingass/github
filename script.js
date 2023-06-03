@@ -4,6 +4,13 @@ var pagrindinisItem = document.getElementById("Pagrindinis");
 var apieItem = document.getElementById("Apie");
 var kontaktaiItem = document.getElementById("Kontaktai");
 var faqItem = document.getElementById("FAQ");
+var poraštėItem = document.getElementById("Poraštė");
+var PagrVieta = document.getElementById("PagrVieta");
+var ApieVieta = document.getElementById("ApieVieta");
+var KontaktVieta = document.getElementById("KontakVieta");
+var FAQVieta = document.getElementById("FAQVieta");
+var PoraštVieta = document.getElementById("PoraštVieta");
+
 
 menuBtn.addEventListener("click", function () {
   sidebar.classList.toggle("open");
@@ -26,22 +33,22 @@ closeBtn.addEventListener("click", function () {
 });
 
 // Add click event listeners to individual menu items
-pagrindinisItem.addEventListener("click", function (event) {
-  event.preventDefault();
-  window.location.href = "#";
+pagrindinisItem.addEventListener("click", function () {
+  PagrVieta.scrollIntoView({ behavior: "smooth" });
 });
 
-apieItem.addEventListener("click", function (event) {
-  event.preventDefault();
-  window.location.href = "#";
+apieItem.addEventListener("click", function () {
+  ApieVieta.scrollIntoView({ behavior: "smooth" });
 });
 
-kontaktaiItem.addEventListener("click", function (event) {
-  event.preventDefault();
-  window.location.href = "#";
+kontaktaiItem.addEventListener("click", function () {
+  KontaktVieta.scrollIntoView({ behavior: "smooth" });
 });
 
-faqItem.addEventListener("click", function (event) {
-  event.preventDefault();
-  window.location.href = "#";
+faqItem.addEventListener("click", function () {
+  FAQVieta.scrollIntoView({ behavior: "smooth" });
+});
+
+poraštėItem.addEventListener("click", function () {
+  PoraštVieta.scrollIntoView({ behavior: "smooth" });
 });

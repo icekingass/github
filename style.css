@@ -16,7 +16,7 @@ body {
   padding: 20px;
   text-align: center;
   transition: 0.3s;
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url(images/img2.jpg);
   background-size: cover;
   height: 100vh;
@@ -48,7 +48,8 @@ h1 {
   #Pagrindinis,
   #Apie,
   #Kontaktai,
-  #FAQ {
+  #FAQ,
+  #Poraštė {
     cursor: pointer;
   }
 #sidebar {
@@ -173,3 +174,6 @@ button.close-button {
     word-break: break-all;
   }
 }
+
+
+  
