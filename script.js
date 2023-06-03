@@ -1,35 +1,47 @@
-// JavaScript content
-
-var FAQ = document.getElementById("FAQ");
-var Pagrindinis = document.getElementById("Pagrindinis");
-var Apie = document.getElementById("Apie");
-var Kontaktai = document.getElementById("Kontaktai");
-var MenuBtn = document.getElementById("MenuBtn");
-var SubMenu = document.getElementsByClassName("sub-menu")[0];
+var menuBtn = document.getElementById("MenuBtn");
 var sidebar = document.getElementById("sidebar");
+var pagrindinisItem = document.getElementById("Pagrindinis");
+var apieItem = document.getElementById("Apie");
+var kontaktaiItem = document.getElementById("Kontaktai");
+var faqItem = document.getElementById("FAQ");
 
-FAQ.addEventListener("click", function () {
-  window.location.href = "#";
-});
-
-Pagrindinis.addEventListener("click", function () {
-  window.location.href = "#";
-});
-
-Apie.addEventListener("click", function () {
-  window.location.href = "#";
-});
-
-Kontaktai.addEventListener("click", function () {
-  window.location.href = "#";
-});
-
-MenuBtn.addEventListener("click", function () {
+menuBtn.addEventListener("click", function () {
   sidebar.classList.toggle("open");
-  
+
+  // Update the opacity of menuBtn when the sidebar is opened
   if (sidebar.classList.contains("open")) {
-    MenuBtn.style.transform = "translateX(400px)";
+    menuBtn.classList.add("hidden");
   } else {
-    MenuBtn.style.transform = "translateX(0)";
+    menuBtn.classList.remove("hidden");
   }
+});
+
+var closeBtn = document.getElementById("CloseBtn");
+
+closeBtn.addEventListener("click", function () {
+  sidebar.classList.remove("open");
+
+  // Reset the opacity of menuBtn when the sidebar is closed
+  menuBtn.classList.remove("hidden");
+});
+
+// Add click event listeners to individual menu items
+pagrindinisItem.addEventListener("click", function (event) {
+  event.preventDefault();
+  window.location.href = "#";
+});
+
+apieItem.addEventListener("click", function (event) {
+  event.preventDefault();
+  window.location.href = "#";
+});
+
+kontaktaiItem.addEventListener("click", function (event) {
+  event.preventDefault();
+  window.location.href = "#";
+});
+
+faqItem.addEventListener("click", function (event) {
+  event.preventDefault();
+  window.location.href = "#";
 });
