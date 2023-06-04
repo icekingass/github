@@ -17,18 +17,37 @@ body {
   text-align: center;
   transition: 0.3s;
   overflow-x: hidden;
-  background-image: url(images/img2.jpg);
+  background-image: url(images/image-2.jpg);
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
 }
 
+#pirmas h2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 80vw;
+  text-align: center;
+}
+/* #pirmas img{
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: 10vw;
+  margin-right: 5vw;
+  margin-top: 12vh;
+  width: 40vw;
+  height: 20vh;
+  border: 1px solid;
+  right: 0;
+  top: 0;
+} */
 h1 {
   text-align: center;
   text-transform: uppercase;
   transform: scale(1.5);
-  height: auto;
-  width: auto;
+  width: 98vw;
   font-size: 32px;
   margin-top: 20px;
 }
@@ -60,7 +79,6 @@ h1 {
   left: -300px;
   background-color: rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease-in-out;
-  overflow-y: auto;
   z-index: 998;
 }
 
@@ -107,6 +125,9 @@ button.close-button {
 
 
   @media (max-width: 768px) {
+    #pirmas h2{
+      font-size: 0.5em;
+    }
     body{
         overflow-x: hidden;
     }

@@ -35,20 +35,25 @@ closeBtn.addEventListener("click", function () {
 // Add click event listeners to individual menu items
 pagrindinisItem.addEventListener("click", function () {
   PagrVieta.scrollIntoView({ behavior: "smooth" });
+  sidebar.classList.remove("open");
 });
 
 apieItem.addEventListener("click", function () {
   ApieVieta.scrollIntoView({ behavior: "smooth" });
+  sidebar.classList.remove("open");
 });
 
 kontaktaiItem.addEventListener("click", function () {
   KontaktVieta.scrollIntoView({ behavior: "smooth" });
+  sidebar.classList.remove("open");
 });
 
 faqItem.addEventListener("click", function () {
   FAQVieta.scrollIntoView({ behavior: "smooth" });
+  sidebar.classList.remove("open");
 });
 
 poraštėItem.addEventListener("click", function () {
   PoraštVieta.scrollIntoView({ behavior: "smooth" });
+  sidebar.classList.remove("open");
 });
