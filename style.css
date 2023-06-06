@@ -13,17 +13,15 @@ body {
   font-family: 'Lato';
   background: black;
   color: white;
-  padding: 20px;
   text-align: center;
   transition: 0.3s;
   overflow-x: hidden;
   background-image: url(images/image-2.jpg);
   background-size: cover;
-  height: 100vh;
   background-repeat: no-repeat;
 }
 
-#pirmas h2{
+h2{
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 5vw;
@@ -31,6 +29,36 @@ body {
   width: 80vw;
   text-align: center;
 }
+#trecias h2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 87vw;
+  text-align: center;
+}
+#FAQKlausimai li{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 1.5em;
+}
+#footer {
+  height: 75px;
+  display: flex;
+  background-color: #30486bc9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+#footer-text {
+  margin: auto;
+}
+
+
 /* #pirmas img{
   position: absolute;
   box-sizing: border-box;
@@ -47,7 +75,6 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   transform: scale(1.5);
-  width: 98vw;
   font-size: 32px;
   margin-top: 20px;
 }
@@ -125,8 +152,8 @@ button.close-button {
 
 
   @media (max-width: 768px) {
-    #pirmas h2{
-      font-size: 0.5em;
+    h2{
+      font-size: 1.5em;
     }
     body{
         overflow-x: hidden;
@@ -149,7 +176,7 @@ button.close-button {
     }
   
     h1 {
-      font-size: 24px;
+      transform: scale(2);
       margin-top: 20px;
     }
   
@@ -181,19 +208,25 @@ button.close-button {
   #sidebar ul li a {
     font-size: 16px;
   }
-
-  h1 {
-    font-size: 24px;
-    margin-top: 20px;
+  h2{
+    font-size: 1.5em;
   }
+
   body{
     background-size: cover;
   }
+  
   h1 {
-    font-size: 0.6em;
+    font-size: 0.7em;
     white-space: pre-wrap;
     word-break: break-all;
   }
+  /* #PagrVieta h1{
+    margin-top: 40px;
+    font-size: 10px;
+  } 
+  Neveikia!!!
+  */ 
 }
 
 

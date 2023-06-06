@@ -55,5 +55,5 @@ faqItem.addEventListener("click", function () {
 
 poraštėItem.addEventListener("click", function () {
   PoraštVieta.scrollIntoView({ behavior: "smooth" });
-  sidebar.classList.remove("open");
+  sidebar.classList.remove("open"); 
 });
