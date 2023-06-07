@@ -4,12 +4,10 @@ var pagrindinisItem = document.getElementById("Pagrindinis");
 var apieItem = document.getElementById("Apie");
 var kontaktaiItem = document.getElementById("Kontaktai");
 var faqItem = document.getElementById("FAQ");
-var poraštėItem = document.getElementById("Poraštė");
 var PagrVieta = document.getElementById("PagrVieta");
 var ApieVieta = document.getElementById("ApieVieta");
 var KontaktVieta = document.getElementById("KontakVieta");
 var FAQVieta = document.getElementById("FAQVieta");
-var PoraštVieta = document.getElementById("PoraštVieta");
 
 
 menuBtn.addEventListener("click", function () {
@@ -57,8 +55,3 @@ faqItem.addEventListener("click", function () {
   menuBtn.classList.remove("hidden");
 });
 
-poraštėItem.addEventListener("click", function () {
-  PoraštVieta.scrollIntoView({ behavior: "smooth" });
-  sidebar.classList.remove("open"); 
-  menuBtn.classList.remove("hidden");
-});
