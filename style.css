@@ -67,9 +67,9 @@ h2{
   font-size: 1.5em;
 }
 #footer {
-  height: 75px;
+  height: 150px;
   display: flex;
-  background-color: #30486bc9;
+  background-color: #30486b;
   color: white;
   text-align: center;
   padding: 20px;
@@ -205,7 +205,7 @@ button.close-button {
 
 @media (max-width: 320px) {
   #MenuBtn {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #sidebar {
@@ -228,13 +228,19 @@ button.close-button {
     background-size: cover;
   }
   
+  #PagrVieta {
+    white-space: normal;
+    width: 100%;
+    border: none;
+    padding-top: 40px;
+    font-size: 0.5em;
+  }
+
   h1 {
     font-size: 1em;
     margin: 20px auto;
-    width: 30%;
-  }
-  #PagrVieta {
-    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 90%;
   }
   
   .pirmas{
