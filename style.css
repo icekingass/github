@@ -39,10 +39,13 @@ h2{
   display: flex;
   justify-content: center;
   top: 0;
-  background-color: #30486be1;
+  background-color: #30486bc6;
   width: 100vw;
   margin: 10px;
   padding: 10px;
+  backdrop-filter: blur(2px);
+  border: 1px solid #30486bc6;
+  overflow-wrap: break-word;
 }
 .pirmas{
   margin-top: 75px;
@@ -80,18 +83,6 @@ h2{
   justify-content: center;
 }
 
-/* #pirmas img{
-  position: absolute;
-  box-sizing: border-box;
-  margin-left: 10vw;
-  margin-right: 5vw;
-  margin-top: 12vh;
-  width: 40vw;
-  height: 20vh;
-  border: 1px solid;
-  right: 0;
-  top: 0;
-} */
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -241,8 +232,11 @@ button.close-button {
     margin: 20px auto;
     width: 30vw;
   }
-   
-}
-
-
+  #PagrVieta {
+    overflow-wrap: break-word;
+  }
   
+  .pirmas{
+    margin-top: 105px;
+  }
+}
