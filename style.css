@@ -29,8 +29,8 @@ html{
 h2{
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
 }
 #PagrVieta{
@@ -40,7 +40,8 @@ h2{
   justify-content: center;
   top: 0;
   background-color: #30486bc6;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   margin: 10px;
   padding: 10px;
   backdrop-filter: blur(2px);
@@ -53,16 +54,16 @@ h2{
 #trecias h2{
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  width: 87vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 87%;
   text-align: center;
 }
 #FAQKlausimai li{
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 5%;
+  margin-right: 5%;
   font-size: 1.5em;
 }
 #footer {
@@ -174,12 +175,12 @@ button.close-button {
     }
   
     #sidebar {
-      width: 100vw;
-      left: -100vw;
+      width: 100%;
+      left: -100%;
     }
   
     #sidebar.open {
-      transform: translateX(100vw);
+      transform: translateX(100%);
     }
   
     #sidebar ul li a {
@@ -208,12 +209,12 @@ button.close-button {
   }
 
   #sidebar {
-    width: 100vw;
-    left: -100vw;
+    width: 100%;
+    left: -100%;
   }
 
   #sidebar.open {
-    transform: translateX(100vw);
+    transform: translateX(100%);
   }
 
   #sidebar ul li a {
@@ -228,9 +229,9 @@ button.close-button {
   }
   
   h1 {
-    font-size: 0.7em;
+    font-size: 1em;
     margin: 20px auto;
-    width: 30vw;
+    width: 30%;
   }
   #PagrVieta {
     overflow-wrap: break-word;
