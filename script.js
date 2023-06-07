@@ -36,24 +36,29 @@ closeBtn.addEventListener("click", function () {
 pagrindinisItem.addEventListener("click", function () {
   PagrVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
+  menuBtn.classList.remove("hidden");
 });
 
 apieItem.addEventListener("click", function () {
   ApieVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
+  menuBtn.classList.remove("hidden");
 });
 
 kontaktaiItem.addEventListener("click", function () {
   KontaktVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
+  menuBtn.classList.remove("hidden");
 });
 
 faqItem.addEventListener("click", function () {
   FAQVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
+  menuBtn.classList.remove("hidden");
 });
 
 poraštėItem.addEventListener("click", function () {
   PoraštVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open"); 
+  menuBtn.classList.remove("hidden");
 });

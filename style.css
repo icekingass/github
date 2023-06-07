@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
   background-image: url(images/image-2.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -218,15 +219,10 @@ button.close-button {
   
   h1 {
     font-size: 0.7em;
-    white-space: pre-wrap;
-    word-break: break-all;
+    margin: 20px auto;
+    width: 30vw;
   }
-  /* #PagrVieta h1{
-    margin-top: 40px;
-    font-size: 10px;
-  } 
-  Neveikia!!!
-  */ 
+   
 }
 
 
