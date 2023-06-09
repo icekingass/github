@@ -8,6 +8,7 @@ var PagrVieta = document.getElementById("PagrVieta");
 var ApieVieta = document.getElementById("ApieVieta");
 var KontaktVieta = document.getElementById("KontakVieta");
 var FAQVieta = document.getElementById("FAQVieta");
+var faqKlausimai = document.getElementById("FAQKlausimai");
 
 
 menuBtn.addEventListener("click", function () {
@@ -55,3 +56,10 @@ faqItem.addEventListener("click", function () {
   menuBtn.classList.remove("hidden");
 });
 
+faqKlausimai.addEventListener("click", function(event) {
+  var clickedElement = event.target;
+  
+  if (clickedElement.tagName === "LI") {
+    clickedElement.classList.toggle("active");
+  }
+});

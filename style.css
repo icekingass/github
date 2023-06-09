@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Poppins:ital,wght@0,300;1,400&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 * {
@@ -11,13 +10,13 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Geologica', sans-serif;
   background: black;
   color: white;
   text-align: center;
   transition: 0.3s;
   overflow-x: hidden;
-  background-image: url(images/image-2.jpg);
+  background: #0c0a20;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -33,23 +32,9 @@ h2{
   margin-right: 5%;
   text-align: center;
 }
-#PagrVieta{
-  position: fixed;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  background-color: #30486bc6;
-  width: 100%;
-  max-width: 100%;
-  margin: 10px;
-  padding: 10px;
-  backdrop-filter: blur(2px);
-  border: 1px solid #30486bc6;
-  overflow-wrap: break-word;
-}
+
 .pirmas{
-  margin-top: 75px;
+  margin-top: 120px;
 }
 #trecias h2{
   margin-top: 50px;
@@ -59,12 +44,22 @@ h2{
   width: 87%;
   text-align: center;
 }
+
+
 #FAQKlausimai li{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  transition: color 0.3s;
+  max-width: 900px;
+  display:inline-flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
   margin-left: 5%;
   margin-right: 5%;
   font-size: 1.5em;
+  background-color: #30486b;
+  border-radius: 15px;
+  border: 1px solid #30486b;
+  cursor: pointer;
 }
 #footer {
   height: 150px;
@@ -89,12 +84,32 @@ h1 {
   text-transform: uppercase;
   transform: scale(1.5);
   font-size: 32px;
-  margin-top: 20px;
+  margin-top: 10px;
+  z-index: -1;
 }
-
+#PagrVieta{
+  position: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  background-color: #30486bc6;
+  width: 100%;
+  max-width: 100%;
+  margin: 15px;
+  padding: 15px;
+  backdrop-filter: blur(2px);
+  border: 1px solid #30486bc6;
+  overflow-wrap: break-word;
+  z-index: 1;
+}
+#FAQKlausimai li.active {
+  background-color: white;
+  color: black;
+}
 #MenuBtn {
   cursor: pointer;
-  font-size: 32px;
+  font-size: 42px;
   position: fixed;
   top: 20px;
   left: 20px;
@@ -158,7 +173,7 @@ button.close-button {
     background: none;
     cursor: pointer;
     padding: 0;
-    font-size: inherit;
+    font-size: 42px;
     color: inherit;
   }
 
