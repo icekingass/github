@@ -67,7 +67,7 @@ faqItem.addEventListener("click", function () {
   menuBtn.classList.remove("hidden");
 });
 pagrindinisItemNav.addEventListener("click", function () {
-  pirmas.scrollIntoView({ behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 apieItemNav.addEventListener("click", function () {
