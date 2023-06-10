@@ -44,7 +44,7 @@ closeBtn.addEventListener("click", function () {
 
 // Add click event listeners to individual menu items
 pagrindinisItem.addEventListener("click", function () {
-  PagrVieta.scrollIntoView({ behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
