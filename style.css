@@ -18,6 +18,14 @@
 	background-color: #000000;	
 }
 
+body {
+  opacity: 0;
+  transition: 30s opacity ;
+}
+
+body.fade-out {
+  opacity: 1;
+}
 
 * {
   margin: 0;
@@ -48,14 +56,13 @@ h2{
   margin-bottom: 50px;
   margin-left: 5%;
   margin-right: 5%;
-  text-align: start;
+  text-align: center;
 }
 #trecias h2{
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 5%;
   margin-right: 5%;
-  width: 87%;
   text-align: center;
 }
 #Navigation{
@@ -228,6 +235,8 @@ button.close-button {
     font-size: 42px;
     color: inherit;
   }
+
+
 @media (max-width: 1080px){
   #Navigation{
     cursor: pointer;
@@ -246,6 +255,7 @@ button.close-button {
     z-index: 1; 
   }
 }
+
 
   @media (max-width: 768px) {
     #MenuBtn{
@@ -370,7 +380,7 @@ button.close-button {
     margin: 20px auto;
     word-break: break-word;
     max-width: 90%;
-    margin-top: -70px;
+    margin-top: -30px;
   }
   
   .pirmas{
@@ -381,7 +391,7 @@ button.close-button {
   }
   #FAQVieta,
   #KontakVieta{
-    margin-top: -50px;
+    margin-top: -30px;
   }
   #FAQKlausimai{
     font-size: .75em;
