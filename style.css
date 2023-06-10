@@ -160,9 +160,6 @@ h1 {
   left: 20px;
   z-index: 100;
   transition: opacity 0.3s ease;
-  border: 1px solid black;
-  background-color: black;
-  opacity: 8;
 }
 #MenuBtn.hidden {
     opacity: 0;
@@ -192,7 +189,9 @@ h1 {
   list-style: none;
   padding: 0;
 }
-
+#BtnBackground{
+  display: none;
+}
 #sidebar ul li a {
   color: white;
   display: block;
@@ -252,6 +251,18 @@ button.close-button {
     #MenuBtn{
       display: flex;
       transform: scale(1.5);
+    }
+    #BtnBackground{
+      display: flex;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: black;
+      height: 65px;
+      z-index: 99;
+    }
+    #MenuBtn::before{
+      z-index: 9999;
     }
     #Navigation{
       display: none;
