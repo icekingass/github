@@ -1,381 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Poppins:ital,wght@0,300;1,400&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mano Ateitis Su Technologijomis</title>
+  <link rel="stylesheet" href="style.css" />
 
-::-webkit-scrollbar-track
-{
-	border: 1px solid black;
-	background-color: #F5F5F5;
-}
+</head>
+<body>
+  <i class="fas fa-bars" id="MenuBtn"></i>
 
-::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #272728;
-}
+  <div id="sidebar">
+    <div class="button-section">
+      <button id="CloseBtn" class="close-button"><i class="fas fa-times"></i></button>
+    </div>
+    <ul>
+      <li><a id="Pagrindinis">Pagrindinis</a></li>
+      <li><a id="Apie">Apie</a></li>
+      <li><a id="Kontaktai">Kontaktai</a></li>
+      <li><a id="FAQ">DUK</a></li>
+    </ul>
+  </div>
 
-::-webkit-scrollbar-thumb
-{
-	background-color: #000000;	
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  text-decoration-color: none;
-}
-
-body {
-  font-family: 'Geologica', sans-serif;
-  background: black;
-  color: white;
-  text-align: center;
-  transition: 0.3s;
-  overflow-x: hidden;
-  background: url(images/Background.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-html{
-  scroll-behavior: smooth;
-}
-
-h2{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: start;
-}
-#trecias h2{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 87%;
-  text-align: center;
-}
-#Navigation{
-  cursor: pointer;
-  display: flex;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  justify-content: start;
-  align-items: start;
-  font-size: 1.5em;
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 20px;
-  margin-bottom:100px;
-  z-index: 1; 
-}
-#ApieNav,
-#KontaktaiNav,
-#FAQNav{
-  margin-left: 5%;
-}
-
-
-#FAQKlausimai li{
-  transition: color 0.3s;
-  max-width: 900px;
-  display:inline-flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 1.5em;
-  background-color: #272728;
-  border-radius: 15px;
-  border: 1px solid #272728;
-  cursor: pointer;
-  opacity: 0.8;
-}
-#footer {
-  display: flex;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-  align-items: center;
-}
-#footer-text {
-  margin: auto;
-}
-#pirmas, #antras{
-  line-height: 35px;
-}
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  transform: scale(1.5);
-  font-size: 32px;
-  margin-top: 10px;
-  z-index: -1;
-}
-
-
-/* #navigation{
-  position: fixed;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  background-color: #30486bc6;
-  width: 100%;
-  max-width: 100%;
-  margin: 15px;
-  padding: 15px;
-  backdrop-filter: blur(2px);
-  border: 1px solid #30486bc6;
-  overflow-wrap: break-word;
-  z-index: 1;
-} */
-#PagrVieta{
-  margin-top: 75px;
-  height: 50px;
-  margin-bottom: 10px;
-  max-width: 100vw;
-  justify-content: center;
-}
-#FAQVieta,
-#KontakVieta,
-#ApieVieta{
-  margin-top: 100px;
-}
-
-#MenuBtn {
-  display: none;
-  cursor: pointer;
-  font-size: 42px;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 100;
-  transition: opacity 0.3s ease;
-  border: 1px solid black;
-  background-color: black;
-  opacity: 8;
-}
-#MenuBtn.hidden {
-    opacity: 0;
-  }
-  #Pagrindinis,
-  #Apie,
-  #Kontaktai,
-  #FAQ{
-    cursor: pointer;
-  }
-#sidebar {
-  width: 300px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: -300px;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: transform 0.3s ease-in-out;
-  z-index: 998;
-}
-
-#sidebar.open {
-  transform: translateX(300px);
-}
-
-#sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-#sidebar ul li a {
-  color: white;
-  display: block;
-  padding: 20px;
-  font-size: 20px;
-}
-#PagrVietaMob,
-#PagrVietaMob2{
-  display: none;
-}
-
-#sidebar ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-#sidebar .button-section {
-  height: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#sidebar .button-section button {
-  font-size: 24px;
-  padding: 10px 20px;
-  margin: 10px auto;
-}
-
-button.close-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    font-size: 42px;
-    color: inherit;
-  }
-@media (max-width: 1080px){
-  #Navigation{
-    cursor: pointer;
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    justify-content: start;
-    align-items: start;
-    font-size: 1.5em;
-    background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 20px;
-    margin-bottom:100px;
-    z-index: 1; 
-  }
-}
-
-  @media (max-width: 768px) {
-    #MenuBtn{
-      display: flex;
-      transform: scale(1.5);
-    }
-    #Navigation{
-      display: none;
-    }
-    
-    h2{
-      font-size: 1.5em;
-    }
-    html{
-        overflow-x: hidden;
-    }
-    #MenuBtn {
-      font-size: 24px;
-    }
+  <div id="Navigation">
+    <a id="PagrindinisNav">Pagrindinis</a>
+    <a id="ApieNav">Apie</a>
+    <a id="KontaktaiNav">Kontaktai</a>
+    <a id="FAQNav">DUK</a>
+  </div>
+<br>
+  <div id="pirmas">
+    <h1 id="PagrVieta">Mano Ateitis Su Technologijomis</h1>
+    <h1 id="PagrVietaMob">Mano Ateitis Su</h1>
+    <h1 id="PagrVietaMob2">Technologijomis</h1>
+    <h2 class="pirmas">Technologijų ateitis yra nuolat besivystanti ir dinamiška. Naujos technologijos ir inovacijos įsiveržia į visus gyvenimo aspektus, keisdamos mūsų būdą dirbti, mokytis, bendrauti ir leisdamas atskleisti naujas galimybes. Šiuolaikinėje pasaulyje matome didelį pokytį į skaitmeninę erdvę, kur technologijos tampa neatsiejama kasdienio gyvenimo dalimi. Šiuolaikinės technologijos ne tik palengvina mūsų kasdienybę, bet ir leidžia spėti į ateitį. Jos paveikia visus gyvenimo aspektus, pradedant nuo darbo vietų kūrimo ir išsaugojimo, iki švietimo, medicinos ir pramogų. Naujos technologijos nuolat įsiveržia į mūsų gyvenimus ir atveria naujus horizontus, kuriuose galime kurti ir kurti. Tai nuolatinis keitimasis ir tobulėjimas, kuris reikalauja nuolatinės mokymosi ir prisitaikymo. Siekiant pasiekti sėkmę ateities technologijose, svarbu išmokti ir įgyti naujų įgūdžių, o taip pat sekti naujausias tendencijas ir inovacijas.</h2>
+  </div>
+  <div id="antras">
+    <h1 id="ApieVieta">Apie</h1>
+    <h2 class="antras">Technologijų srityje yra daugybė įdomių temų ir temų, kurias galima ištyrinėti. Jei norite sužinoti daugiau apie šią sritį, jūsų galimybės yra beveik neribotos. Galite domėtis programavimu, internetu, dirbtine intelektu, virtualia realybe, saugumu, duomenų analize ir dar daugiau. Tai tik keletas pavyzdžių, o technologijų pasaulyje visada yra naujovių, kurias atrasti ir ištirti. Taip pat svarbu paminėti, kad technologijos neturi būti baimės arba sunkumo kliūtis. Nors kai kurie aspektai gali būti iššūkiai, tai taip pat yra sritis, kuri suteikia daug galimybių. Pradedantiesiems tai gali būti naujas ir įdomus kelias, o žinių ir įgūdžių kėlimas technologijų srityje gali būti svarbus žingsnis siekiant sėkmės dabartiniame pasaulyje. Būdamas atviras naujovėms ir pasitikintis savo sugebėjimais, galite įsilieti į šią įdomią ir perspektyvią sritį.</h2>
+  </div>
+  <div id="trecias">
+    <h1 id="KontakVieta">Kontaktai</h1>
+    <h2 >arniuksa07@gmail.com</h2>
+  </div>
+  <div id="ketvirtas">
+    <h1 id="FAQVieta">DUK</h1>
+    <div id="FAQKlausimai">
+      <li>Kokie yra svarbiausi technologiniai įgūdžiai, kurie gali būti naudingi ateities darbo rinkoje?</li>
+      <li>Kaip galiu pasirengti ateities technologijų darbo aplinkai?</li>
+      <li>Kokie yra pagrindiniai iššūkiai ir galimybės, su kuriais susiduria technologijų pramonė?</li>
+      <li>Kokie yra perspektyviausi sektoriai technologijų srityje ir kur yra karjeros galimybės?</li>
+      <li>Kokie yra etiniai ir saugumo aspektai, susiję su technologijų naudojimu?</li>
+      <li>Kokia yra ekonominė, socialinė ir aplinkos poveikio ateities technologijoms perspektyva?</li>
+    </div>
+  </div>
+  <div >
+  </div>
+  <div id="footer">
+    <div id="footer-text">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque sed, libero officiis eveniet voluptatem. Quibusdam a fugit tenetur magni?</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
   
-    #sidebar {
-      width: 100%;
-      left: -100%;
-    }
-  
-    #sidebar.open {
-      transform: translateX(100%);
-      height: 100%;
-    }
-  
-    #sidebar ul li a {
-      position: static;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-    }
-  
-    h1 {
-      transform: scale(3);
-      margin-top: 20px;
-    }
-  
-    body {
-      background-size: cover;
-    }
-  
-    h1 {
-        font-size: 0.75em;
-      white-space: pre-wrap;
-      word-break: break-all;
-    }
-    #PagrVieta {
-      display:none;
-    }
-    #PagrVietaMob,
-    #PagrVietaMob2{
-    display: flex;
-    justify-content: center;
-    transform: scale(3);
-    line-height: 16px;
-    }
-    #FAQKlausimai{
-      font-size: .75em;
-    }
-  }
-
-@media (max-width: 320px) {
-  html{
-    overflow-x: hidden;
-  }
-  #MenuBtn {
-    font-size: 20px;
-  }
-
-  #sidebar {
-    width: 100%;
-    left: -100%;
-  }
-
-  #sidebar.open {
-    transform: translateX(100%);
-  }
-
-  #sidebar ul li a {
-    font-size: 16px;
-  }
-  h2{
-    font-size: 1.0em;
-    line-height: 28px;
-  }
-
-  body{
-    background-size: cover;
-  }
-  #PagrVieta {
-    display:none;
-  }
-  #PagrVietaMob,
-  #PagrVietaMob2{
-  display: flex;
-  justify-content: center;
-  transform: scale(2);
-  line-height: 10px;
-  }
-  #FAQVieta,
-  #KontakVieta,
-  #ApieVieta
-   {
-    font-size: 0.6em;
-    margin: 20px auto;
-    word-break: break-word;
-    max-width: 90%;
-    margin-top: -70px;
-  }
-  
-  .pirmas{
-    margin-top: 50px;
-  }
-  .antras{
-    margin-top: 30px;
-  }
-  #FAQVieta,
-  #KontakVieta{
-    margin-top: -50px;
-  }
-  #FAQKlausimai{
-    font-size: .75em;
-  }
-  #footer-text{
-    font-size: .75em;
-  }
-}
+</body>
+</html>
