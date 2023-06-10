@@ -17,7 +17,7 @@ var pirmas = document.getElementById("pirmas");
 var antras = document.getElementById("antras");
 var trecias = document.getElementById("trecias");
 var ketvirtas = document.getElementById("ketvirtas");
-
+var PagrVietaMob = document.getElementById("PagrVietaMob");
 
 menuBtn.addEventListener("click", function () {
   sidebar.classList.toggle("open");
@@ -39,27 +39,30 @@ closeBtn.addEventListener("click", function () {
   menuBtn.classList.remove("hidden");
 });
 
+
+
+
 // Add click event listeners to individual menu items
 pagrindinisItem.addEventListener("click", function () {
-  PagrVieta.scrollIntoView({ behavior: "smooth" });
+  PagrVietaMob.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 
 apieItem.addEventListener("click", function () {
-  ApieVieta.scrollIntoView({ behavior: "smooth" });
+  antras.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 
 kontaktaiItem.addEventListener("click", function () {
-  KontaktVieta.scrollIntoView({ behavior: "smooth" });
+  trecias.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 
 faqItem.addEventListener("click", function () {
-  FAQVieta.scrollIntoView({ behavior: "smooth" });
+  ketvirtas.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
