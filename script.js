@@ -40,11 +40,12 @@ closeBtn.addEventListener("click", function () {
 });
 
 
+document.body.classList.add('fade-out');
 
 
 // Add click event listeners to individual menu items
 pagrindinisItem.addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  PagrVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
