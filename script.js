@@ -4,16 +4,24 @@ var pagrindinisItem = document.getElementById("Pagrindinis");
 var apieItem = document.getElementById("Apie");
 var kontaktaiItem = document.getElementById("Kontaktai");
 var faqItem = document.getElementById("FAQ");
+var pagrindinisItemNav = document.getElementById("PagrindinisNav");
+var apieItemNav = document.getElementById("ApieNav");
+var kontaktaiItemNav = document.getElementById("KontaktaiNav");
+var faqItemNav = document.getElementById("FAQNav");
 var PagrVieta = document.getElementById("PagrVieta");
 var ApieVieta = document.getElementById("ApieVieta");
 var KontaktVieta = document.getElementById("KontakVieta");
 var FAQVieta = document.getElementById("FAQVieta");
 var faqKlausimai = document.getElementById("FAQKlausimai");
+var pirmas = document.getElementById("pirmas");
+var antras = document.getElementById("antras");
+var trecias = document.getElementById("trecias");
+var ketvirtas = document.getElementById("ketvirtas");
 
 
 menuBtn.addEventListener("click", function () {
   sidebar.classList.toggle("open");
-
+  
   // Update the opacity of menuBtn when the sidebar is opened
   if (sidebar.classList.contains("open")) {
     menuBtn.classList.add("hidden");
@@ -55,11 +63,18 @@ faqItem.addEventListener("click", function () {
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
+pagrindinisItemNav.addEventListener("click", function () {
+  pirmas.scrollIntoView({ behavior: "smooth" });
+});
 
-faqKlausimai.addEventListener("click", function(event) {
-  var clickedElement = event.target;
-  
-  if (clickedElement.tagName === "LI") {
-    clickedElement.classList.toggle("active");
-  }
+apieItemNav.addEventListener("click", function () {
+  antras.scrollIntoView({ behavior: "smooth" });
+});
+
+kontaktaiItemNav.addEventListener("click", function () {
+  trecias.scrollIntoView({behavior: "smooth" });
+});
+
+faqItemNav.addEventListener("click", function () {
+  ketvirtas.scrollIntoView({ behavior: "smooth" });
 });
