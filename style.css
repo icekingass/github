@@ -275,8 +275,18 @@ button.close-button {
       white-space: pre-wrap;
       word-break: break-all;
     }
-    #PagrVieta{
-      margin-top: 100px;
+    #PagrVieta {
+      display:none;
+    }
+    #PagrVietaMob,
+    #PagrVietaMob2{
+    display: flex;
+    justify-content: center;
+    transform: scale(3);
+    line-height: 16px;
+    }
+    #FAQKlausimai{
+      font-size: .75em;
     }
   }
 
