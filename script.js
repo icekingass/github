@@ -29,7 +29,13 @@ var answer5 = document.getElementById("answer5");
 var answer6 = document.getElementById("answer6");
 var Logo = document.getElementById("Logo");
 var LogoNav = document.getElementById("LogoNav");
+var LogoMob = document.getElementById("LogoMob");
 
+LogoMob.addEventListener("click", function (){
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  sidebar.classList.remove("open");
+  menuBtn.classList.remove("hidden");
+})
 Logo.addEventListener("click", function (){
   window.scrollTo({ top: 0, behavior: 'smooth' });
   sidebar.classList.remove("open");
