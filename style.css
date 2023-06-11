@@ -1,27 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Geologica:wght@800&family=Poppins:ital,wght@0,300;1,400&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Geologica:wght@800&family=Poppins:ital,wght@0,300;1,400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
-::-webkit-scrollbar-track
-{
-	border: 1px solid black;
-	background-color: #0c0a20;
+::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #0c0a20;
 }
 
-::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #272728;
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #272728;
 }
 
-::-webkit-scrollbar-thumb
-{
-	background: linear-gradient(#e66129, #b4a71a);	
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#e66129, #b4a71a);
 }
-
 
 body {
   opacity: 0;
-  transition: 1s opacity ;
+  transition: 1s opacity;
 }
 
 body.fade-out {
@@ -37,7 +33,7 @@ body.fade-out {
 }
 
 body {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   background: black;
   color: white;
   text-align: center;
@@ -48,28 +44,30 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
-h2{
+h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
 }
-#trecias h2{
+#trecias h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
 }
-#trash, #trash2, #trash3{
+#trash,
+#trash2,
+#trash3 {
   visibility: hidden;
 }
-#Navigation{
+#Navigation {
   display: flex;
   position: fixed;
   top: 0;
@@ -81,35 +79,47 @@ h2{
   padding-top: 12px;
   padding-bottom: 10px;
   margin-left: 20px;
-  margin-bottom:100px;
-  z-index: 1; 
+  margin-bottom: 100px;
+  z-index: 1;
 }
-#Navigation a{
+#Navigation a {
   cursor: pointer;
 }
 #ApieNav,
 #KontaktaiNav,
-#FAQNav{
+#FAQNav {
   margin-left: 5%;
 }
 
-
-#FAQKlausimai li{
+#FAQKlausimai div {
   transition: color 0.3s;
-  max-width: 900px;
-  display:inline-flex;
-  justify-content: center;
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 5%;
-  margin-right: 5%;
   font-size: 1.5em;
   background-color: #272728;
   border-radius: 15px;
   border: 1px solid #272728;
   cursor: pointer;
   opacity: 0.8;
+  width: 40%;
 }
+#PirmEil {
+  margin-right: 5%;
+}
+#answer1,
+#answer2,
+#answer3,
+#answer4,
+#answer5,
+#answer6 {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #footer {
   display: flex;
   background-color: black;
@@ -123,7 +133,8 @@ h2{
   margin: auto;
 }
 
-#pirmas, #antras{
+#pirmas,
+#antras {
   line-height: 35px;
 }
 h1 {
@@ -134,7 +145,8 @@ h1 {
   margin-top: 10px;
   z-index: -1;
 }
-.pirmas, .antras{
+.pirmas,
+.antras {
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
@@ -159,7 +171,7 @@ h1 {
   overflow-wrap: break-word;
   z-index: 1;
 } */
-#PagrVieta{
+#PagrVieta {
   margin-top: 75px;
   height: 50px;
   margin-bottom: 10px;
@@ -168,7 +180,7 @@ h1 {
 }
 #FAQVieta,
 #KontakVieta,
-#ApieVieta{
+#ApieVieta {
   margin-top: 50px;
 }
 
@@ -183,14 +195,14 @@ h1 {
   transition: opacity 0.3s ease;
 }
 #MenuBtn.hidden {
-    opacity: 0;
-  }
-  #Pagrindinis,
-  #Apie,
-  #Kontaktai,
-  #FAQ{
-    cursor: pointer;
-  }
+  opacity: 0;
+}
+#Pagrindinis,
+#Apie,
+#Kontaktai,
+#FAQ {
+  cursor: pointer;
+}
 #sidebar {
   width: 300px;
   height: 100vh;
@@ -210,7 +222,7 @@ h1 {
   list-style: none;
   padding: 0;
 }
-#BtnBackground{
+#BtnBackground {
   display: none;
 }
 #sidebar ul li a {
@@ -220,10 +232,10 @@ h1 {
   font-size: 20px;
 }
 #PagrVietaMob,
-#PagrVietaMob2{
+#PagrVietaMob2 {
   display: none;
 }
-#PagrVietaMob{
+#PagrVietaMob {
   margin-top: 80px;
 }
 
@@ -245,17 +257,16 @@ h1 {
 }
 
 button.close-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    font-size: 42px;
-    color: inherit;
-  }
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 42px;
+  color: inherit;
+}
 
-
-@media (max-width: 1080px){
-  #Navigation{
+@media (max-width: 1080px) {
+  #Navigation {
     cursor: pointer;
     display: flex;
     position: fixed;
@@ -268,97 +279,101 @@ button.close-button {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 20px;
-    margin-bottom:100px;
-    z-index: 1; 
+    margin-bottom: 100px;
+    z-index: 1;
   }
 }
 
+@media (max-width: 768px) {
+  #MenuBtn {
+    display: flex;
+    transform: scale(1.5);
+  }
+  #FAQKlausimai div{
+    width: 80%;
+  }
+  #BtnBackground {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 65px;
+    z-index: 99;
+  }
+  #MenuBtn::before {
+    z-index: 9999;
+  }
+  #Navigation {
+    display: none;
+  }
 
-  @media (max-width: 768px) {
-    #MenuBtn{
-      display: flex;
-      transform: scale(1.5);
-    }
-    #BtnBackground{
-      display: flex;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: black;
-      height: 65px;
-      z-index: 99;
-    }
-    #MenuBtn::before{
-      z-index: 9999;
-    }
-    #Navigation{
-      display: none;
-    }
-    
-    h2{
-      font-size: 1.5em;
-    }
-    html{
-        overflow-x: hidden;
-    }
-    #MenuBtn {
-      font-size: 24px;
-    }
-  
-    #sidebar {
-      width: 100%;
-      left: -100%;
-    }
-  
-    #sidebar.open {
-      transform: translateX(100%);
-      height: 100%;
-    }
-  
-    #sidebar ul li a {
-      position: static;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-    }
-  
-    h1 {
-      transform: scale(3);
-      margin-top: 20px;
-    }
-  
-    body {
-      background-size: cover;
-    }
-  
-    h1 {
-        font-size: 0.75em;
-      white-space: pre-wrap;
-      word-break: break-all;
-    }
-    #PagrVieta {
-      display:none;
-    }
-    #PagrVietaMob,
-    #PagrVietaMob2{
+  h2 {
+    font-size: 1.5em;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  #MenuBtn {
+    font-size: 24px;
+  }
+
+  #sidebar {
+    width: 100%;
+    left: -100%;
+  }
+
+  #sidebar.open {
+    transform: translateX(100%);
+    height: 100%;
+  }
+
+  #sidebar ul li a {
+    position: static;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+  }
+
+  h1 {
+    transform: scale(3);
+    margin-top: 20px;
+  }
+
+  body {
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 0.75em;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  #PagrVieta {
+    display: none;
+  }
+  #PagrVietaMob,
+  #PagrVietaMob2 {
     display: flex;
     justify-content: center;
     transform: scale(3);
     line-height: 16px;
-    }
-    #FAQKlausimai{
-      font-size: .75em;
-    }
   }
+  #FAQKlausimai {
+    font-size: 0.75em;
+  }
+}
 
 @media (max-width: 320px) {
-  html{
+  html {
     overflow-x: hidden;
   }
   #MenuBtn {
     font-size: 20px;
   }
-  #trash, #trash2, #trash3{
+  #trash,
+  #trash2,
+  #trash3 {
     margin-top: -90px;
   }
   #sidebar {
@@ -373,46 +388,45 @@ button.close-button {
   #sidebar ul li a {
     font-size: 16px;
   }
-  h2{
-    font-size: 1.0em;
+  h2 {
+    font-size: 1em;
     line-height: 28px;
   }
 
-  body{
+  body {
     background-size: cover;
   }
   #PagrVieta {
-    display:none;
+    display: none;
   }
   #PagrVietaMob,
-  #PagrVietaMob2{
-  display: flex;
-  justify-content: center;
-  transform: scale(2);
-  line-height: 10px;
+  #PagrVietaMob2 {
+    display: flex;
+    justify-content: center;
+    transform: scale(2);
+    line-height: 10px;
   }
   #KontakVieta,
-  #ApieVieta
-   {
+  #ApieVieta {
     font-size: 0.6em;
     margin: 20px auto;
     word-break: break-word;
     max-width: 90%;
     margin-top: 30px;
   }
-  #KontakVieta{
+  #KontakVieta {
     margin-top: 40px;
   }
-  .pirmas{
+  .pirmas {
     margin-top: 50px;
   }
-  .antras{
+  .antras {
     margin-top: 30px;
   }
-  #FAQKlausimai{
-    font-size: .75em;
+  #FAQKlausimai {
+    font-size: 0.75em;
   }
-  #footer-text{
-    font-size: .75em;
+  #footer-text {
+    font-size: 0.75em;
   }
 }

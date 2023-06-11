@@ -85,3 +85,87 @@ kontaktaiItemNav.addEventListener("click", function () {
 faqItemNav.addEventListener("click", function () {
   trash3.scrollIntoView({ behavior: "smooth" });
 });
+let a = 0;
+let b = 0;
+let c = 0;
+let d = 0;
+let e = 0;
+let f = 0;
+function answer1() {
+  var answer1 = document.getElementById("answer1");
+  
+  if (a == 0){
+    answer1.style.display = "block";
+    a += 1;
+    console.log(a);
+    
+  }else{
+    answer1.style.display = "none";
+    a--;
+  }
+}
+function answer2() {
+  var answer1 = document.getElementById("answer2");
+  
+  if (b == 0){
+    answer1.style.display = "block";
+    b += 1;
+    console.log(b);
+    
+  }else{
+    answer1.style.display = "none";
+    b--;
+  }
+}
+function answer3() {
+  var answer1 = document.getElementById("answer3");
+  
+  if (c == 0){
+    answer1.style.display = "block";
+    c += 1;
+    console.log(c);
+    
+  }else{
+    answer1.style.display = "none";
+    c--;
+  }
+}
+function answer4() {
+  var answer1 = document.getElementById("answer4");
+  
+  if (d == 0){
+    answer1.style.display = "block";
+    d += 1;
+    console.log(d);
+    
+  }else{
+    answer1.style.display = "none";
+    d--;
+  }
+}
+function answer5() {
+  var answer1 = document.getElementById("answer5");
+  
+  if (e == 0){
+    answer1.style.display = "block";
+    e += 1;
+    console.log(e);
+    
+  }else{
+    answer1.style.display = "none";
+    e--;
+  }
+}
+function answer6() {
+  var answer1 = document.getElementById("answer6");
+  
+  if (f == 0){
+    answer1.style.display = "block";
+    f += 1;
+    console.log(f);
+    
+  }else{
+    answer1.style.display = "none";
+    f--;
+  }
+}

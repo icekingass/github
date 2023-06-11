@@ -1,75 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mano Ateitis Su Technologijomis</title>
-  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mano Ateitis Su Technologijomis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <i class="fas fa-bars" id="MenuBtn"></i>
+    <div id="BtnBackground"></div>
 
-</head>
-<body>
-  <i class="fas fa-bars" id="MenuBtn"></i>
-  <div id="BtnBackground">
-
-  </div>
-
-  <div id="sidebar">
-    <div class="button-section">
-      <button id="CloseBtn" class="close-button"><i class="fas fa-times"></i></button>
+    <div id="sidebar">
+      <div class="button-section">
+        <button id="CloseBtn" class="close-button">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul>
+        <li><a id="Pagrindinis">Pagrindinis</a></li>
+        <li><a id="Apie">Apie</a></li>
+        <li><a id="Kontaktai">Kontaktai</a></li>
+        <li><a id="FAQ">DUK</a></li>
+      </ul>
     </div>
-    <ul>
-      <li><a id="Pagrindinis">Pagrindinis</a></li>
-      <li><a id="Apie">Apie</a></li>
-      <li><a id="Kontaktai">Kontaktai</a></li>
-      <li><a id="FAQ">DUK</a></li>
-    </ul>
-  </div>
 
-  <div id="Navigation">
-    <a id="PagrindinisNav">Pagrindinis</a>
-    <a id="ApieNav">Apie</a>
-    <a id="KontaktaiNav">Kontaktai</a>
-    <a id="FAQNav">DUK</a>
-  </div>
-
-  <div id="pirmas" >
-    <h1 id="PagrVieta" >Mano Ateitis Su Technologijomis</h1>
-    <h1 id="PagrVietaMob" >Mano Ateitis Su</h1>
-    <h1 id="PagrVietaMob2" >Technologijomis</h1>
-    <h2 class="pirmas">Technologijų ateitis yra nuolat besivystanti ir dinamiška. Naujos technologijos ir inovacijos įsiveržia į visus gyvenimo aspektus, keisdamos mūsų būdą dirbti, mokytis, bendrauti ir leisdamas atskleisti naujas galimybes. Šiuolaikinėje pasaulyje matome didelį pokytį į skaitmeninę erdvę, kur technologijos tampa neatsiejama kasdienio gyvenimo dalimi.</h2>
-    <div id="trash">wdadawd</div>
-  </div>
-
-  <div id="antras" >
-    <h1 id="ApieVieta">Apie</h1>
-    <h2 class="antras">Technologijų srityje yra daugybė įdomių temų ir temų, kurias galima ištyrinėti. Jei norite sužinoti daugiau apie šią sritį, jūsų galimybės yra beveik neribotos. Galite domėtis programavimu, internetu, dirbtine intelektu, virtualia realybe, saugumu, duomenų analize ir dar daugiau. Tai tik keletas pavyzdžių, o technologijų pasaulyje visada yra naujovių, kurias atrasti ir ištirti. Taip pat svarbu paminėti, kad technologijos neturi būti baimės arba sunkumo kliūtis. Nors kai kurie aspektai gali būti iššūkiai, tai taip pat yra sritis, kuri suteikia daug galimybių. Pradedantiesiems tai gali būti naujas ir įdomus kelias, o žinių ir įgūdžių kėlimas technologijų srityje gali būti svarbus žingsnis siekiant sėkmės dabartiniame pasaulyje. Būdamas atviras naujovėms ir pasitikintis savo sugebėjimais, galite įsilieti į šią įdomią ir perspektyvią sritį.</h2>
-    <div id="trash2">wdadawd</div>
-  </div>
-  <div id="trecias" >
-    <h1 id="KontakVieta">Kontaktai</h1>
-    <h2 class="trecias">Jei turite klausimų ar norite pateikti pastabas apie tinklapį Šį, galite susisiekti su mumis elektroniniu paštu. Mūsų el. pašto adresas yra arniuksa07@gmail.com.</h2>
-    <div id="trash3">wdadawd</div>
-  </div>
-  <div id="ketvirtas" >
-    <h1 id="FAQVieta">DUK</h1>
-    <div id="FAQKlausimai">
-      <li>Kokie yra svarbiausi technologiniai įgūdžiai, kurie gali būti naudingi ateities darbo rinkoje?</li>
-      <li>Kaip galiu pasirengti ateities technologijų darbo aplinkai?</li>
-      <li>Kokie yra pagrindiniai iššūkiai ir galimybės, su kuriais susiduria technologijų pramonė?</li>
-      <li>Kokie yra perspektyviausi sektoriai technologijų srityje ir kur yra karjeros galimybės?</li>
-      <li>Kokie yra etiniai ir saugumo aspektai, susiję su technologijų naudojimu?</li>
-      <li>Kokia yra ekonominė, socialinė ir aplinkos poveikio ateities technologijoms perspektyva?</li>
+    <div id="Navigation">
+      <a id="PagrindinisNav">Pagrindinis</a>
+      <a id="ApieNav">Apie</a>
+      <a id="KontaktaiNav">Kontaktai</a>
+      <a id="FAQNav">DUK</a>
     </div>
-  </div>
-  <div >
-  </div>
-  <div id="footer">
-    <div id="footer-text">
-      <p>&#169; Visos teisės saugomos</p>
+
+    <div id="pirmas">
+      <h1 id="PagrVieta">Mano Ateitis Su Technologijomis</h1>
+      <h1 id="PagrVietaMob">Mano Ateitis Su</h1>
+      <h1 id="PagrVietaMob2">Technologijomis</h1>
+      <h2 class="pirmas">
+        Technologijų ateitis yra nuolat besivystanti ir dinamiška. Naujos
+        technologijos ir inovacijos įsiveržia į visus gyvenimo aspektus,
+        keisdamos mūsų būdą dirbti, mokytis, bendrauti ir leisdamas atskleisti
+        naujas galimybes. Šiuolaikinėje pasaulyje matome didelį pokytį į
+        skaitmeninę erdvę, kur technologijos tampa neatsiejama kasdienio
+        gyvenimo dalimi.
+      </h2>
+      <div id="trash">wdadawd</div>
     </div>
-  </div>
-  <script src="script.js"></script>
-  
-</body>
+
+    <div id="antras">
+      <h1 id="ApieVieta">Apie</h1>
+      <h2 class="antras">
+        Technologijų srityje yra daugybė įdomių temų ir temų, kurias galima
+        ištyrinėti. Jei norite sužinoti daugiau apie šią sritį, jūsų galimybės
+        yra beveik neribotos. Galite domėtis programavimu, internetu, dirbtine
+        intelektu, virtualia realybe, saugumu, duomenų analize ir dar daugiau.
+        Tai tik keletas pavyzdžių, o technologijų pasaulyje visada yra naujovių,
+        kurias atrasti ir ištirti.
+      </h2>
+      <div id="trash2">wdadawd</div>
+    </div>
+    <div id="trecias">
+      <h1 id="KontakVieta">Kontaktai</h1>
+      <h2 class="trecias">
+        Jei turite klausimų ar norite pateikti pastabas apie šį tinklapį, galite
+        susisiekti su manimi elektroniniu paštu. Mano el. pašto adresas yra
+        arniuksa07@gmail.com.
+      </h2>
+      <div id="trash3">wdadawd</div>
+    </div>
+    <div id="ketvirtas">
+      <h1 id="FAQVieta">DUK</h1>
+      <div id="FAQKlausimai">
+        <div id="PirmEil1" onclick="answer1()">
+          Kokie yra svarbiausi technologiniai įgūdžiai, kurie gali būti naudingi
+          ateities darbo rinkoje?
+          <p id="answer1">Programavimas, Duomenų analizė, Dirbtinis Intelektas, Interneto Dalykai (IoT), Saugumas ir privatumas, projektų valdymas, komunikacija ir bendravimas.</p>
+        </div>
+        <div id="AntrEil1" onclick="answer2()">
+          Kaip galiu tinkamai pasirengti ateities technologijų darbo aplinkai ir
+          būti pasiruošusiam ateities iššūkiams?
+          <p id="answer2">Įgyti technologinius įgūdžius, Sekti naujoves, Mokytis nuolat.</p>
+        </div>
+        <div id="PirmEil2" onclick="answer3()">
+          Kokie yra pagrindiniai iššūkiai ir galimybės, su kuriais susiduria
+          technologijų pramonė?
+          <p id="answer3">Pagrindiniai iššūkiai ir galimybės technologijų pramonėje: sparčiai kintanti technologijų aplinka, konkurencija, saugumo grėsmės, susijusios su duomenų privatumu ir kibernetine sauga, darbo jėgos ir specialistų trūkumas.</p>
+        </div>
+        <div id="AntrEil2" onclick="answer4()">
+          Kokie yra perspektyviausi sektoriai technologijų srityje ir kur yra
+          karjeros galimybės?
+          <p id="answer4">Perspektyviausi sektoriai technologijų srityje ir karjeros galimybės:
+            Dirbtinis intelektas, mašininis mokymasis, duomenų analizė, kibernetinė sauga, blokų grandinė, interneto daiktai (IoT), biotechnologijos, energetika ir tvarios technologijos. </p>
+        </div>
+        <div id="PirmEil3" onclick="answer5()">
+          Kokie yra etiniai ir saugumo aspektai, susiję su technologijų
+          naudojimu?
+          <p id="answer5">Etiniai ir saugumo aspektai, susiję su technologijų naudojimu:
+            Svarbu užtikrinti, kad technologijos būtų naudojamos atsakingai ir etiškai, apsaugant asmens duomenis ir privatumą.</p>
+        </div>
+        <div id="AntrEil3" onclick="answer6()">
+          Kokia yra ekonominė, socialinė ir aplinkos poveikio ateities
+          technologijoms perspektyva?
+          <p id="answer6">Ateities technologijos ir jų poveikis ekonomikai, visuomenei ir aplinkai:
+            Ateities technologijos gali turėti didelį ekonominį potencialą, kuriant naujas verslo galimybes ir darbo vietas. </p>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <div id="footer">
+      <div id="footer-text">
+        <p>&#169; Visos teisės saugomos</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
