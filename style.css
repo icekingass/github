@@ -14,7 +14,16 @@
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#e66129, #b4a71a);
 }
-
+#LogoMob{
+  display: none;
+  top: 20px;
+  z-index: 100;
+  position: fixed;
+  height: 10vw;
+  width: 10vw;
+  cursor: pointer;
+  margin-left: 45%;
+}
 body {
   opacity: 0;
   transition: 1s opacity;
@@ -318,6 +327,10 @@ button.close-button {
   #MenuBtn {
     display: flex;
     transform: scale(1.5);
+  }
+  #LogoMob{
+    align-items: center;
+    display: flex;
   }
   #FAQKlausimai div{
     width: 80%;
