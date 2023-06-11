@@ -18,6 +18,9 @@ var antras = document.getElementById("antras");
 var trecias = document.getElementById("trecias");
 var ketvirtas = document.getElementById("ketvirtas");
 var PagrVietaMob = document.getElementById("PagrVietaMob");
+var trash = document.getElementById("trash");
+var trash2 = document.getElementById("trash2");
+var trash3 = document.getElementById("trash3");
 
 menuBtn.addEventListener("click", function () {
   sidebar.classList.toggle("open");
@@ -45,25 +48,25 @@ document.body.classList.add('fade-out');
 
 // Add click event listeners to individual menu items
 pagrindinisItem.addEventListener("click", function () {
-  PagrVieta.scrollIntoView({ behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 
 apieItem.addEventListener("click", function () {
-  antras.scrollIntoView({ behavior: "smooth" });
+  trash.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 
 kontaktaiItem.addEventListener("click", function () {
-  trecias.scrollIntoView({ behavior: "smooth" });
+  trash2.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 
 faqItem.addEventListener("click", function () {
-  ketvirtas.scrollIntoView({ behavior: "smooth" });
+  trash3 .scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
@@ -72,13 +75,13 @@ pagrindinisItemNav.addEventListener("click", function () {
 });
 
 apieItemNav.addEventListener("click", function () {
-  antras.scrollIntoView({ behavior: "smooth" });
+  trash.scrollIntoView({ behavior: "smooth" });
 });
 
 kontaktaiItemNav.addEventListener("click", function () {
-  trecias.scrollIntoView({behavior: "smooth" });
+  trash2.scrollIntoView({behavior: "smooth" });
 });
 
 faqItemNav.addEventListener("click", function () {
-  ketvirtas.scrollIntoView({ behavior: "smooth" });
+  trash3.scrollIntoView({ behavior: "smooth" });
 });

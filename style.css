@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Poppins:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Geologica:wght@800&family=Poppins:ital,wght@0,300;1,400&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 ::-webkit-scrollbar-track
 {
 	border: 1px solid black;
-	background-color: #F5F5F5;
+	background-color: #0c0a20;
 }
 
 ::-webkit-scrollbar
@@ -15,12 +15,13 @@
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #000000;	
+	background: linear-gradient(#e66129, #b4a71a);	
 }
+
 
 body {
   opacity: 0;
-  transition: 30s opacity ;
+  transition: 1s opacity ;
 }
 
 body.fade-out {
@@ -36,7 +37,7 @@ body.fade-out {
 }
 
 body {
-  font-family: 'Geologica', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   background: black;
   color: white;
   text-align: center;
@@ -65,8 +66,10 @@ h2{
   margin-right: 5%;
   text-align: center;
 }
+#trash, #trash2, #trash3{
+  visibility: hidden;
+}
 #Navigation{
-  cursor: pointer;
   display: flex;
   position: fixed;
   top: 0;
@@ -75,11 +78,14 @@ h2{
   align-items: start;
   font-size: 1.5em;
   background-color: black;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
   margin-left: 20px;
   margin-bottom:100px;
   z-index: 1; 
+}
+#Navigation a{
+  cursor: pointer;
 }
 #ApieNav,
 #KontaktaiNav,
@@ -116,6 +122,7 @@ h2{
 #footer-text {
   margin: auto;
 }
+
 #pirmas, #antras{
   line-height: 35px;
 }
@@ -127,7 +134,14 @@ h1 {
   margin-top: 10px;
   z-index: -1;
 }
-
+.pirmas, .antras{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 
 /* #navigation{
   position: fixed;
@@ -155,7 +169,7 @@ h1 {
 #FAQVieta,
 #KontakVieta,
 #ApieVieta{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #MenuBtn {
@@ -208,6 +222,9 @@ h1 {
 #PagrVietaMob,
 #PagrVietaMob2{
   display: none;
+}
+#PagrVietaMob{
+  margin-top: 80px;
 }
 
 #sidebar ul li a:hover {
@@ -341,7 +358,9 @@ button.close-button {
   #MenuBtn {
     font-size: 20px;
   }
-
+  #trash, #trash2, #trash3{
+    margin-top: -90px;
+  }
   #sidebar {
     width: 100%;
     left: -100%;
@@ -372,7 +391,6 @@ button.close-button {
   transform: scale(2);
   line-height: 10px;
   }
-  #FAQVieta,
   #KontakVieta,
   #ApieVieta
    {
@@ -380,18 +398,16 @@ button.close-button {
     margin: 20px auto;
     word-break: break-word;
     max-width: 90%;
-    margin-top: -30px;
+    margin-top: 30px;
   }
-  
+  #KontakVieta{
+    margin-top: 40px;
+  }
   .pirmas{
     margin-top: 50px;
   }
   .antras{
     margin-top: 30px;
-  }
-  #FAQVieta,
-  #KontakVieta{
-    margin-top: -30px;
   }
   #FAQKlausimai{
     font-size: .75em;
