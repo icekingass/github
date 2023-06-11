@@ -47,7 +47,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+#LogoNav{
+  width: 33px;
+  height: 33px;
+  margin-right: 20px;
+  cursor: pointer;
+}
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -214,6 +219,7 @@ h1 {
   z-index: 998;
 }
 
+
 #sidebar.open {
   transform: translateX(300px);
 }
@@ -274,6 +280,19 @@ button.close-button {
   padding: 0;
   font-size: 42px;
   color: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#Logo{
+  height: 35px;
+  width: 35px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.trecias{
+  white-space: pre-line;
+  text-align: left;
 }
 
 @media (max-width: 1080px) {

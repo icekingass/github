@@ -21,6 +21,24 @@ var PagrVietaMob = document.getElementById("PagrVietaMob");
 var trash = document.getElementById("trash");
 var trash2 = document.getElementById("trash2");
 var trash3 = document.getElementById("trash3");
+var answer1 = document.getElementById("answer1");
+var answer2 = document.getElementById("answer2");
+var answer3 = document.getElementById("answer3");
+var answer4 = document.getElementById("answer4");
+var answer5 = document.getElementById("answer5");
+var answer6 = document.getElementById("answer6");
+var Logo = document.getElementById("Logo");
+var LogoNav = document.getElementById("LogoNav");
+
+Logo.addEventListener("click", function (){
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  sidebar.classList.remove("open");
+  menuBtn.classList.remove("hidden");
+})
+
+LogoNav.addEventListener("click", function(){
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+})
 
 menuBtn.addEventListener("click", function () {
   sidebar.classList.toggle("open");
@@ -91,81 +109,93 @@ let c = 0;
 let d = 0;
 let e = 0;
 let f = 0;
-function answer1() {
-  var answer1 = document.getElementById("answer1");
+function aanswer1() {
   
   if (a == 0){
     answer1.style.display = "block";
     a += 1;
-    console.log(a);
-    
+    answer2.style.display = "none";
+    answer3.style.display = "none";
+    answer4.style.display = "none";
+    answer5.style.display = "none";
+    answer6.style.display = "none";
   }else{
     answer1.style.display = "none";
     a--;
   }
 }
-function answer2() {
-  var answer1 = document.getElementById("answer2");
+function aanswer2() {
   
   if (b == 0){
-    answer1.style.display = "block";
+    answer2.style.display = "block";
     b += 1;
-    console.log(b);
-    
-  }else{
     answer1.style.display = "none";
+    answer3.style.display = "none";
+    answer4.style.display = "none";
+    answer5.style.display = "none";
+    answer6.style.display = "none";
+  }else{
+    answer2.style.display = "none";
     b--;
   }
 }
-function answer3() {
-  var answer1 = document.getElementById("answer3");
+function aanswer3() {
   
   if (c == 0){
-    answer1.style.display = "block";
+    answer3.style.display = "block";
     c += 1;
-    console.log(c);
-    
-  }else{
+    answer2.style.display = "none";
     answer1.style.display = "none";
+    answer4.style.display = "none";
+    answer5.style.display = "none";
+    answer6.style.display = "none";
+  }else{
+    answer3.style.display = "none";
     c--;
   }
 }
-function answer4() {
-  var answer1 = document.getElementById("answer4");
+function aanswer4() {
   
   if (d == 0){
-    answer1.style.display = "block";
+    answer4.style.display = "block";
     d += 1;
-    console.log(d);
-    
-  }else{
+    answer2.style.display = "none";
+    answer3.style.display = "none";
     answer1.style.display = "none";
+    answer5.style.display = "none";
+    answer6.style.display = "none";
+  }else{
+    answer4.style.display = "none";
     d--;
   }
 }
-function answer5() {
-  var answer1 = document.getElementById("answer5");
+function aanswer5() {
   
   if (e == 0){
-    answer1.style.display = "block";
+    answer5.style.display = "block";
     e += 1;
-    console.log(e);
-    
-  }else{
+    answer2.style.display = "none";
+    answer3.style.display = "none";
+    answer4.style.display = "none";
     answer1.style.display = "none";
+    answer6.style.display = "none";
+  }else{
+    answer5.style.display = "none";
     e--;
   }
 }
-function answer6() {
-  var answer1 = document.getElementById("answer6");
+function aanswer6() {
   
   if (f == 0){
-    answer1.style.display = "block";
+    answer6.style.display = "block";
     f += 1;
-    console.log(f);
-    
-  }else{
+    answer2.style.display = "none";
+    answer3.style.display = "none";
+    answer4.style.display = "none";
+    answer5.style.display = "none";
     answer1.style.display = "none";
+  }else{
+    answer6.style.display = "none";
     f--;
   }
 }
