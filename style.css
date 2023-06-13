@@ -56,6 +56,7 @@ body.fade-out {
   list-style: none;
   text-decoration: none;
   text-decoration-color: none;
+
 }
 
 body {
@@ -69,6 +70,17 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  z-index: -10;
+}
+body::before{
+    backdrop-filter: blur(15px);
+    content: "";
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 500%;
+    z-index: -9;
 }
 html {
   scroll-behavior: smooth;
@@ -138,6 +150,43 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
   /* transition: 0.3s; */
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #e66129, #b4a71a);
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #a9471e, #857c13);
+}
+
+input,
+textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  resize: vertical;
 }
 #PirmEil1,
 #PirmEil2,
