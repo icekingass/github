@@ -115,6 +115,12 @@ let c = 0;
 let d = 0;
 let e = 0;
 let f = 0;
+document.getElementById("answer1").style.transition = "all 2s ease 0.3s";
+document.getElementById("answer2").style.transition = "all 2s ease 0.3s";
+document.getElementById("answer3").style.transition = "all 2s ease 0.3s";
+document.getElementById("answer4").style.transition = "all 2s ease 0.3s";
+document.getElementById("answer5").style.transition = "all 2s ease 0.3s";
+document.getElementById("answer6").style.transition = "all 2s ease 0.3s";
 function aanswer1() {
   
   if (a == 0){

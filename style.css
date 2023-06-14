@@ -117,7 +117,6 @@ h2 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.1px);
   -webkit-backdrop-filter: blur(8.1px);
-  border: 1px solid black;
 }
 #Navigation a {
   cursor: pointer;
@@ -149,8 +148,9 @@ h2 {
   width: 40%;
   padding-left: 10px;
   padding-right: 10px;
-  /* transition: 0.3s; */
+  transition: all 2s ease 0.3s;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -203,7 +203,9 @@ textarea {
   display: none;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: all 2s ease 0.3s;
 }
+
 
 #footer {
   display: flex;
@@ -510,7 +512,12 @@ textarea {
     font-size: 0.75em;
   }
 }
-
+@media (max-width: 425px){
+  .form{
+    margin: 20px;
+    margin-top: -50px;
+  }
+}
 @media (max-width: 320px) {
   /* .form {
   display: flex;
@@ -549,11 +556,7 @@ textarea {
 textarea {
   resize: vertical;
 } */
-
-.form{
-  margin: 20px;
-  margin-top: -50px;
-}
+ 
   html {
     overflow-x: hidden;
   }
