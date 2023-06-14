@@ -539,11 +539,6 @@ button.close-button {
   #MenuBtn {
     font-size: 20px;
   }
-  #trash,
-  #trash2,
-  #trash3 {
-    margin-top: -90px;
-  }
   #sidebar {
     width: 100%;
     left: -100%;
