@@ -78,36 +78,35 @@ pagrindinisItem.addEventListener("click", function () {
 });
 
 apieItem.addEventListener("click", function () {
-  trash.scrollIntoView({ behavior: "smooth" });
+  ApieVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 
 kontaktaiItem.addEventListener("click", function () {
-  trash2.scrollIntoView({ behavior: "smooth" });
+  KontaktVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 
 faqItem.addEventListener("click", function () {
-  trash3 .scrollIntoView({ behavior: "smooth" });
+  FAQVieta.scrollIntoView({ behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
 pagrindinisItemNav.addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 apieItemNav.addEventListener("click", function () {
-  trash.scrollIntoView({ behavior: "smooth" });
+  ApieVieta.scrollIntoView({ behavior: "smooth" });
 });
 
 kontaktaiItemNav.addEventListener("click", function () {
-  trash2.scrollIntoView({behavior: "smooth" });
+  KontaktVieta.scrollIntoView({behavior: "smooth" });
 });
 
 faqItemNav.addEventListener("click", function () {
-  trash3.scrollIntoView({ behavior: "smooth" });
+  FAQVieta.scrollIntoView({ behavior: "smooth" });
 });
 let a = 0;
 let b = 0;
@@ -115,12 +114,6 @@ let c = 0;
 let d = 0;
 let e = 0;
 let f = 0;
-document.getElementById("answer1").style.transition = "all 2s ease 0.3s";
-document.getElementById("answer2").style.transition = "all 2s ease 0.3s";
-document.getElementById("answer3").style.transition = "all 2s ease 0.3s";
-document.getElementById("answer4").style.transition = "all 2s ease 0.3s";
-document.getElementById("answer5").style.transition = "all 2s ease 0.3s";
-document.getElementById("answer6").style.transition = "all 2s ease 0.3s";
 function aanswer1() {
   
   if (a == 0){
@@ -211,3 +204,21 @@ function aanswer6() {
     f--;
   }
 }
+window.addEventListener('scroll', function() {
+  var navLinks = document.querySelectorAll('a[id$="Nav"]');
+  var sectionIds = ['PagrVieta', 'ApieVieta', 'KontakVieta', 'FAQVieta'];
+
+  for (var i = 0; i < navLinks.length; i++) {
+    var navLink = navLinks[i];
+    var targetElement = document.getElementById(sectionIds[i]);
+
+    var elementRect = targetElement.getBoundingClientRect();
+    var isInViewport = elementRect.top >= 0 && elementRect.bottom <= window.innerHeight;
+
+    if (isInViewport) {
+      navLink.classList.add('active');
+    } else {
+      navLink.classList.remove('active');
+    }
+  }
+});

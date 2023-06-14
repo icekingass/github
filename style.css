@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Geologica:wght@800&family=Poppins:ital,wght@0,300;1,400&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
+
+html{
+  scroll-padding-top: 50px;
+}
 ::-webkit-scrollbar-track {
   border: 1px solid black;
   background-color: #0c0a20;
@@ -94,10 +98,8 @@ h2 {
   text-align: center;
 }
 
-#trash,
-#trash2,
-#trash3 {
-  visibility: hidden;
+.active {
+  color: #E66129;
 }
 #Navigation {
   display: block;
@@ -120,6 +122,9 @@ h2 {
 }
 #Navigation a {
   cursor: pointer;
+  background: #0c0a20;
+  border-radius: 5px;
+  padding: 10px;
 }
 #ApieNav,
 #KontaktaiNav,
@@ -224,6 +229,25 @@ textarea {
 #antras {
   line-height: 35px;
 }
+
+.content {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.content h2 {
+  width: 70%;
+  text-align: justify;
+}
+
+.content img {
+  width: 30%;
+  object-position: center;
+}
+
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -234,14 +258,17 @@ h1 {
 }
 .pirmas,
 .antras {
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  width: 90%;
   justify-content: center;
   display: flex;
   align-items: center;
+  margin: auto;
 }
-
+.antras{
+  margin-top: 50px;
+}
 /* #navigation{
   position: fixed;
   text-align: center;
@@ -378,43 +405,7 @@ button.close-button {
   margin-right: 5%;
   text-align: center;
 }
-/* #Susisiekite{
-  position: absolute;
-  display: flex;
-  text-align: start;
-  z-index: 1;
-  font-size: 20px;
-  margin-left: 70px;
-  white-space: pre-wrap;
-}
-#txtArea{
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-textarea {
-  z-index: 1;
-  resize: none;
-  margin-top: 50px;
-  margin-left: 20px;
-  font-size: 26px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  border: none;
-}
-.siusti{
-  display: none;
-}
-#siusti{
-  width: 3vw;
-  border-radius: 5px;
-  border: none;
-  align-self: end;
-  margin: 20px;
-  margin-right: 3.5vw;
-  transform: scale(2);
-  cursor: pointer;
-} */
+
 
 @media (max-width: 1080px) {
   #FAQNav{
@@ -513,49 +504,18 @@ textarea {
   }
 }
 @media (max-width: 425px){
+  .content img{
+    display: none;
+  }
   .form{
     margin: 20px;
     margin-top: -50px;
   }
 }
 @media (max-width: 320px) {
-  /* .form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
+.content img{
+  display: none;
 }
-label {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  background: linear-gradient(90deg, #e66129, #b4a71a);
-  color: #fff;
-  text-align: center;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: linear-gradient(90deg, #a9471e, #857c13);
-}
-
-input,
-textarea {
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  margin-bottom: 2rem;
-}
-
-textarea {
-  resize: vertical;
-} */
  
   html {
     overflow-x: hidden;
@@ -603,18 +563,18 @@ textarea {
     font-size: 0.6em;
     margin: 20px auto;
     word-break: break-word;
-    max-width: 90%;
-    margin-top: 30px;
+  }
+  #ApieVieta{
+    margin: 0px;
+    height: auto;
   }
   #KontakVieta {
     margin-top: 40px;
   }
-  .pirmas {
-    margin-top: 50px;
+  .pirmas, .antras, .trecias {
+    margin-top: 10px;
   }
-  .antras {
-    margin-top: 30px;
-  }
+
   #FAQKlausimai {
     font-size: 0.75em;
   }
