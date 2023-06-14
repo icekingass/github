@@ -206,9 +206,19 @@ textarea {
   margin-bottom: 20px;
   transition: all 2s ease 0.3s;
 }
+#social {
+  margin: 15px;
+  transform: scale(1.75);
+}
+.fa-brands{
+  margin: 10px;
+  cursor: pointer;
+  color: #e66129;
+}
 
 #footer {
   display: flex;
+  flex-direction: column;
   background-color: black;
   color: white;
   text-align: center;
