@@ -210,7 +210,7 @@ textarea {
   margin: 15px;
   transform: scale(1.75);
 }
-.fa-brands{
+.fa-brands {
   margin: 10px;
   cursor: pointer;
   color: #e66129;
@@ -421,6 +421,9 @@ button.close-button {
 }
 
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 60px;
+  }
   #MenuBtn {
     display: flex;
     transform: scale(1.5);
@@ -517,13 +520,13 @@ button.close-button {
   }
 }
 @media (max-width: 320px) {
-  .fa-brands{
+  .fa-brands {
     transform: scale(0.8);
   }
   html {
     scroll-padding-top: 60px;
   }
-  .content h2{
+  .content h2 {
     width: 90%;
   }
   .content img {
