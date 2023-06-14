@@ -517,6 +517,9 @@ button.close-button {
   }
 }
 @media (max-width: 320px) {
+  .fa-brands{
+    transform: scale(0.8);
+  }
   html {
     scroll-padding-top: 60px;
   }
