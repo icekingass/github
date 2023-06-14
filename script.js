@@ -95,6 +95,7 @@ faqItem.addEventListener("click", function () {
   menuBtn.classList.remove("hidden");
 });
 pagrindinisItemNav.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 apieItemNav.addEventListener("click", function () {
@@ -206,7 +207,7 @@ function aanswer6() {
 }
 window.addEventListener('scroll', function() {
   var navLinks = document.querySelectorAll('a[id$="Nav"]');
-  var sectionIds = ['PagrVieta', 'ApieVieta', 'KontakVieta', 'FAQVieta'];
+  var sectionIds = ['pirmas', 'antras', 'trecias', 'ketvirtas'];
 
   for (var i = 0; i < navLinks.length; i++) {
     var navLink = navLinks[i];
