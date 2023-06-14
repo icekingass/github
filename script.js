@@ -31,24 +31,24 @@ var Logo = document.getElementById("Logo");
 var LogoNav = document.getElementById("LogoNav");
 var LogoMob = document.getElementById("LogoMob");
 
-LogoMob.addEventListener("click", function (){
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+LogoMob.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
-})
-Logo.addEventListener("click", function (){
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+Logo.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
-})
+});
 
-LogoNav.addEventListener("click", function(){
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-})
+LogoNav.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 menuBtn.addEventListener("click", function () {
   sidebar.classList.toggle("open");
-  
+
   // Update the opacity of menuBtn when the sidebar is opened
   if (sidebar.classList.contains("open")) {
     menuBtn.classList.add("hidden");
@@ -66,13 +66,11 @@ closeBtn.addEventListener("click", function () {
   menuBtn.classList.remove("hidden");
 });
 
-
-document.body.classList.add('fade-out');
-
+document.body.classList.add("fade-out");
 
 // Add click event listeners to individual menu items
 pagrindinisItem.addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
   sidebar.classList.remove("open");
   menuBtn.classList.remove("hidden");
 });
@@ -95,7 +93,7 @@ faqItem.addEventListener("click", function () {
   menuBtn.classList.remove("hidden");
 });
 pagrindinisItemNav.addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 apieItemNav.addEventListener("click", function () {
@@ -103,7 +101,7 @@ apieItemNav.addEventListener("click", function () {
 });
 
 kontaktaiItemNav.addEventListener("click", function () {
-  KontaktVieta.scrollIntoView({behavior: "smooth" });
+  KontaktVieta.scrollIntoView({ behavior: "smooth" });
 });
 
 faqItemNav.addEventListener("click", function () {
@@ -116,8 +114,7 @@ let d = 0;
 let e = 0;
 let f = 0;
 function aanswer1() {
-  
-  if (a == 0){
+  if (a == 0) {
     answer1.style.display = "block";
     a += 1;
     answer2.style.display = "none";
@@ -125,14 +122,13 @@ function aanswer1() {
     answer4.style.display = "none";
     answer5.style.display = "none";
     answer6.style.display = "none";
-  }else{
+  } else {
     answer1.style.display = "none";
     a--;
   }
 }
 function aanswer2() {
-  
-  if (b == 0){
+  if (b == 0) {
     answer2.style.display = "block";
     b += 1;
     answer1.style.display = "none";
@@ -140,14 +136,13 @@ function aanswer2() {
     answer4.style.display = "none";
     answer5.style.display = "none";
     answer6.style.display = "none";
-  }else{
+  } else {
     answer2.style.display = "none";
     b--;
   }
 }
 function aanswer3() {
-  
-  if (c == 0){
+  if (c == 0) {
     answer3.style.display = "block";
     c += 1;
     answer2.style.display = "none";
@@ -155,14 +150,13 @@ function aanswer3() {
     answer4.style.display = "none";
     answer5.style.display = "none";
     answer6.style.display = "none";
-  }else{
+  } else {
     answer3.style.display = "none";
     c--;
   }
 }
 function aanswer4() {
-  
-  if (d == 0){
+  if (d == 0) {
     answer4.style.display = "block";
     d += 1;
     answer2.style.display = "none";
@@ -170,14 +164,13 @@ function aanswer4() {
     answer1.style.display = "none";
     answer5.style.display = "none";
     answer6.style.display = "none";
-  }else{
+  } else {
     answer4.style.display = "none";
     d--;
   }
 }
 function aanswer5() {
-  
-  if (e == 0){
+  if (e == 0) {
     answer5.style.display = "block";
     e += 1;
     answer2.style.display = "none";
@@ -185,14 +178,13 @@ function aanswer5() {
     answer4.style.display = "none";
     answer1.style.display = "none";
     answer6.style.display = "none";
-  }else{
+  } else {
     answer5.style.display = "none";
     e--;
   }
 }
 function aanswer6() {
-  
-  if (f == 0){
+  if (f == 0) {
     answer6.style.display = "block";
     f += 1;
     answer2.style.display = "none";
@@ -200,26 +192,47 @@ function aanswer6() {
     answer4.style.display = "none";
     answer5.style.display = "none";
     answer1.style.display = "none";
-  }else{
+  } else {
     answer6.style.display = "none";
     f--;
   }
 }
-window.addEventListener('scroll', function() {
+window.addEventListener("scroll", function () {
   var navLinks = document.querySelectorAll('a[id$="Nav"]');
-  var sectionIds = ['pirmas', 'antras', 'trecias', 'ketvirtas'];
+  var sectionIds = ["pirmas", "antras", "trecias", "ketvirtas"];
 
   for (var i = 0; i < navLinks.length; i++) {
     var navLink = navLinks[i];
     var targetElement = document.getElementById(sectionIds[i]);
 
     var elementRect = targetElement.getBoundingClientRect();
-    var isInViewport = elementRect.top >= 0 && elementRect.bottom <= window.innerHeight;
+    var isInViewport =
+      elementRect.top >= 0 && elementRect.bottom <= window.innerHeight;
 
     if (isInViewport) {
-      navLink.classList.add('active');
+      navLink.classList.add("active");
     } else {
-      navLink.classList.remove('active');
+      navLink.classList.remove("active");
     }
   }
+});
+function addSlideInClass(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("slide-in");
+    }
+  });
+}
+
+// Create an Intersection Observer instance
+const observer = new IntersectionObserver(addSlideInClass);
+
+// Select the elements you want to observe
+const elementsToObserve = document.querySelectorAll(
+  "#pirmas, #antras, #trecias, #ketvirtas"
+);
+
+// Observe each element
+elementsToObserve.forEach((element) => {
+  observer.observe(element);
 });

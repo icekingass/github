@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Geologica:wght@800&family=Poppins:ital,wght@0,300;1,400&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
-
-html{
+html {
   scroll-padding-top: 50px;
 }
 ::-webkit-scrollbar-track {
   border: 1px solid black;
   background-color: #0c0a20;
-  
 }
 
 ::-webkit-scrollbar {
@@ -19,9 +17,8 @@ html{
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#e66129, #b4a71a);
   border-radius: 10px;
-  
 }
-#LogoMob{
+#LogoMob {
   display: none;
   top: 15px;
   z-index: 100;
@@ -31,7 +28,7 @@ html{
   cursor: pointer;
   margin-left: 45%;
 }
-#LogoNav{
+#LogoNav {
   width: 33px;
   height: 33px;
   margin-right: 20px;
@@ -39,7 +36,7 @@ html{
   position: absolute;
   left: 0;
 }
-#Logo{
+#Logo {
   height: 35px;
   width: 35px;
   margin-bottom: 50px;
@@ -60,7 +57,6 @@ body.fade-out {
   list-style: none;
   text-decoration: none;
   text-decoration-color: none;
-
 }
 
 body {
@@ -76,15 +72,15 @@ body {
   background-repeat: no-repeat;
   z-index: -10;
 }
-body::before{
-    backdrop-filter: blur(15px);
-    content: "";
-    height: 100%;
-    position: fixed;
-    top:0;
-    left:0;
-    width: 500%;
-    z-index: -9;
+body::before {
+  backdrop-filter: blur(15px);
+  content: "";
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500%;
+  z-index: -9;
 }
 html {
   scroll-behavior: smooth;
@@ -99,7 +95,7 @@ h2 {
 }
 
 .active {
-  color: #E66129;
+  color: #e66129;
 }
 #Navigation {
   display: block;
@@ -132,8 +128,7 @@ h2 {
   margin-left: 5%;
 }
 
-#FAQNav
-{
+#FAQNav {
   margin-right: 3%;
 }
 
@@ -195,7 +190,7 @@ textarea {
 }
 #PirmEil1,
 #PirmEil2,
-#PirmEil3{
+#PirmEil3 {
   margin-right: 5%;
 }
 
@@ -210,7 +205,6 @@ textarea {
   margin-bottom: 20px;
   transition: all 2s ease 0.3s;
 }
-
 
 #footer {
   display: flex;
@@ -266,7 +260,7 @@ h1 {
   align-items: center;
   margin: auto;
 }
-.antras{
+.antras {
   margin-top: 50px;
 }
 /* #navigation{
@@ -304,7 +298,7 @@ h1 {
   font-size: 42px;
   position: fixed;
   top: 20px;
-  right : 20px;
+  right: 20px;
   z-index: 100;
   transition: opacity 0.3s ease;
 }
@@ -328,18 +322,18 @@ h1 {
   z-index: 998;
 }
 
-
 #sidebar.open {
   transform: translateX(300px);
 }
-.slide-in{
+.slide-in {
   animation: slide-in 2s;
 }
-@keyframes slide-in{
-  0%{
+@keyframes slide-in {
+  0% {
     opacity: 0;
     margin-left: -200px;
-  }100%{
+  }
+  100% {
     opacity: 1;
     margin-left: 0%;
   }
@@ -394,7 +388,7 @@ button.close-button {
   right: 0;
 }
 
-.trecias{
+.trecias {
   white-space: pre-line;
   text-align: left;
 }
@@ -406,12 +400,11 @@ button.close-button {
   text-align: center;
 }
 
-
 @media (max-width: 1080px) {
-  #FAQNav{
+  #FAQNav {
     margin-right: 23%;
   }
-  #siusti{
+  #siusti {
     font-size: 10px;
   }
 }
@@ -421,15 +414,15 @@ button.close-button {
     display: flex;
     transform: scale(1.5);
   }
-  #LogoMob{
+  #LogoMob {
     align-items: center;
     display: flex;
     height: 6vw;
     width: 6vw;
     margin-left: 47.5%;
-    top: 10px
+    top: 10px;
   }
-  #FAQKlausimai div{
+  #FAQKlausimai div {
     width: 80%;
   }
   #BtnBackground {
@@ -503,20 +496,20 @@ button.close-button {
     font-size: 0.75em;
   }
 }
-@media (max-width: 425px){
-  .content img{
+@media (max-width: 425px) {
+  .content img {
     display: none;
   }
-  .form{
+  .form {
     margin: 20px;
     margin-top: -50px;
   }
 }
 @media (max-width: 320px) {
-.content img{
-  display: none;
-}
- 
+  .content img {
+    display: none;
+  }
+
   html {
     overflow-x: hidden;
   }
@@ -564,14 +557,16 @@ button.close-button {
     margin: 20px auto;
     word-break: break-word;
   }
-  #ApieVieta{
+  #ApieVieta {
     margin: 0px;
     height: auto;
   }
   #KontakVieta {
     margin-top: 40px;
   }
-  .pirmas, .antras, .trecias {
+  .pirmas,
+  .antras,
+  .trecias {
     margin-top: 10px;
   }
 
@@ -581,7 +576,7 @@ button.close-button {
   #footer-text {
     font-size: 0.75em;
   }
-  #LogoMob{
+  #LogoMob {
     height: 10vw;
     width: 10vw;
   }
