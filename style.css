@@ -171,6 +171,7 @@ label {
   text-align: center;
   transition: background-color 0.2s ease;
   cursor: pointer;
+  border: black;
 }
 
 .btn:hover {
@@ -506,6 +507,12 @@ button.close-button {
   }
 }
 @media (max-width: 320px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+  .content h2{
+    width: 90%;
+  }
   .content img {
     display: none;
   }
